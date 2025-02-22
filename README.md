@@ -7,6 +7,11 @@ R package "ailm" includes data sets used in the book "Foundations of linear mode
     library(devtools)
     install_github("xliusufe/ailm")
 
+    # or
+    #install.packages("remotes")
+    library(remotes)
+    remotes::install_github("xliusufe/ailm") 
+
 # Usage
 
 - [x] [ailm-manual.pdf](https://github.com/xliusufe/ailm/inst/ailm-manual.pdf) ------------ Details of the usage of the package.
