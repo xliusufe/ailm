@@ -14,6 +14,7 @@ R package "ailm" includes data sets used in the book "Foundations of linear mode
 # Example
     library(glmnet)
     library(ailm)
+ 
     data(breastcancer)
     dna = breastcancer$dna[breastcancer$chrom==21,]
 	rna = breastcancer$rna[which(breastcancer$genechr==21),]
