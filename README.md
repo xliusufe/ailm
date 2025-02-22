@@ -27,11 +27,7 @@ R package "ailm" includes data sets used in the book "Foundations of linear mode
 
 
 # References
-Chin, K., DeVries, S., et al. (2006). 
-    Genomic and transcriptional aberrations linked to breast cancer pathophysiologies.
-    \emph{Cancer cell},
-    \bold{10}(6), 529–541.
-    \doi{10.1016/j.ccr.2006.10.009}
+Chin, K., DeVries, S., et al. (2006). Genomic and transcriptional aberrations linked to breast cancer pathophysiologies. Cancer cell, 10(6), 529-541.
 
 
 
