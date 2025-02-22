@@ -1,5 +1,5 @@
 # ailm
-R package "ailm" includes data sets used in the book "Foundations of linear modeling at the age of AI".
+R package "ailm" includes data sets used in the book "Foundations of linear modeling at the age of AI", see details in Liu (2025).
 
 # Installation
 
@@ -34,6 +34,8 @@ R package "ailm" includes data sets used in the book "Foundations of linear mode
 
 # References
 Chin, K., DeVries, S., et al. (2006). Genomic and transcriptional aberrations linked to breast cancer pathophysiologies. Cancer cell, 10(6), 529-541.
+
+Liu, X. (2025). Foundations of linear modeling at the age of AI. Higher Education Press (China).
 
 
 
