@@ -22,8 +22,7 @@
 \references{
     Efron, B., Hastie, T., Johnstone, I., & Tibshirani, R. (2004). Least angle regression. 
     \emph{Annals of Statistics},
-    \bold{32}(2), 407–499.
-    \doi{10.1214/009053604000000067}
+    \bold{32}(2), 407-499.
 }
 \examples{
 library(glmnet)

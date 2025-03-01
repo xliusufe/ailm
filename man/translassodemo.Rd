@@ -20,16 +20,16 @@
     This dataset is a demonstration of the Trans Lasso method, which aims to combine knowledge from multiple datasets (source and target) to improve regression models. The dataset includes both features and outcome variables from different domains, along with a simulated test set for performance evaluation. It is useful for illustrating the application of transfer learning techniques to high-dimensional regression tasks.
 }
 \source{
-   Code adapted from Li, S., Cai, T. T., \& Li, H. (2022).
+   Code adapted from Li, S., Cai, T. T., & Li, H. (2022).
    Transfer learning for high-dimensional linear regression: Prediction, estimation, and minimax optimality.
    \emph{Journal of the Royal Statistical Society Series B: Statistical Methodology},
-   \bold{84}(1), 149--173.
+   \bold{84}(1), 149-173.
 }
 \references{
-  Li, S., Cai, T. T., \& Li, H. (2022).
+  Li, S., Cai, T. T., & Li, H. (2022).
   Transfer learning for high-dimensional linear regression: Prediction, estimation and minimax optimality.
   \emph{Journal of the Royal Statistical Society Series B: Statistical Methodology},
-  \bold{84}(1), 149--173.
+  \bold{84}(1), 149-173.
 }
 \examples{
 library(glmnet)

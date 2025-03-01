@@ -9,7 +9,9 @@ License: GPL (>=2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-Depends: R (>= 3.2.0), Matrix, glmnet
+Depends: R (>= 3.5.0)
+Imports: Matrix, glmnet, glmtrans, rrpack, Renvlp, RidgeVar
+Remotes: xliusufe/RidgeVar
 NeedsCompilation: yes
 Repository: github
 URL: https://github.com/xliusufe/ailm

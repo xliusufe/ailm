@@ -56,4 +56,21 @@ library(ailm)
 data(ais)
 model <- lm(hgb ~ lbm + bmi + pbf, data = ais)
 summary(model)
+
+
+library(Renvlp)
+library(ailm)
+data(ais)
+ais$sex = as.numeric(ais$sex)
+ais$sport = as.numeric(ais$sport)
+y_col = c("rbc", "wbc", "lbm", "bmi")
+x_col = c("sex", "sport", "ht")
+Y = as.matrix(ais[, y_col])
+X = as.matrix(ais[, x_col])
+Y = scale(Y)
+X = scale(X)
+set.seed(123)
+u_hat <- u.env(X, Y)$u.bic
+model <- env(X, Y, u_hat)
+print(model)
 }

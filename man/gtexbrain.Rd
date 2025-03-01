@@ -73,10 +73,10 @@ The data set includes the following tissue types:
     Genotype-Tissue Expression (GTEx) project, available at: \url{https://www.gtexportal.org/home/}
 }
 \references{
-  Li, S., Cai, T. T., \& Li, H. (2022).
+  Li, S., Cai, T. T., & Li, H. (2022).
   Transfer learning for high-dimensional linear regression: Prediction, estimation and minimax optimality.
   \emph{Journal of the Royal Statistical Society Series B: Statistical Methodology},
-  \bold{84}(1), 149--173.
+  \bold{84}(1), 149-173.
 }
 \examples{
 library(ailm)

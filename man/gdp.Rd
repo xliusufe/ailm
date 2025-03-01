@@ -46,4 +46,15 @@ mean_growth <- mean(gdp$outcome, na.rm = TRUE)
 cat("Average GDP growth rate:", round(mean_growth, 3), "\n")
 model <- lm(outcome ~ x$gdpsh465 + x$freeop + x$p65, data = gdp)
 summary(model)
+
+
+library(RidgeVar)
+library(ailm)
+data(gdp)
+subset <- 1:41
+y <- gdp$outcome[subset]
+x <- as.matrix(gdp$x[subset, ])
+fit_rr <- VAR_RR(y, x)
+sigma2_RR <- fit_rr$sigma2
+print(sigma2_RR)
 }

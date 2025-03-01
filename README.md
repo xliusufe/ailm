@@ -14,12 +14,11 @@ R package "ailm" includes data sets used in the book "Foundations of linear mode
 
 # Usage
 
-- [x] [ailm-manual.pdf](https://github.com/xliusufe/ailm/inst/ailm-manual.pdf) ------------ Details of the usage of the package.
+- [x] [ailm-manual.pdf](https://github.com/xliusufe/ailm/blob/main/inst/ailm-manual.pdf) ------------ Details of the usage of the package.
 
 # Example
     library(glmnet)
     library(ailm)
- 
     data(breastcancer)
     dna = breastcancer$dna[breastcancer$chrom==21,]
 	rna = breastcancer$rna[which(breastcancer$genechr==21),]
@@ -30,6 +29,22 @@ R package "ailm" includes data sets used in the book "Foundations of linear mode
 	coef(fit_ridge, s = "lambda.min")
 	fit_lasso = cv.glmnet(x,y,alpha = 1)
 	coef(fit_lasso, s = "lambda.min")
+
+
+    library(Renvlp)
+    library(ailm)
+    data(ais)
+    ais$sex = as.numeric(ais$sex)
+    ais$sport = as.numeric(ais$sport)
+    y_col = c("rbc", "wbc", "lbm", "bmi")
+    x_col = c("sex", "sport", "ht")
+    Y = as.matrix(ais[, y_col])
+    X = as.matrix(ais[, x_col])
+    Y = scale(Y)
+    X = scale(X)
+    set.seed(123)
+    u_hat <- u.env(X, Y)$u.bic
+    model <- env(X, Y, u_hat)
 
 
 # References
