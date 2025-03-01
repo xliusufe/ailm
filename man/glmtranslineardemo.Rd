@@ -36,4 +36,10 @@ library(ailm)
 data(glmtranslineardemo)
 str(glmtranslineardemo$D.training)
 str(glmtranslineardemo$D.training$target)
+
+D.training <-glmtranslineardemo$D.training
+D.test <- glmtranslineardemo$D.test
+fit.gaussian <- glmtrans(D.training$target, D.training$source)
+summary(fit.gaussian)
+y.pred.glmtrans <- predict(fit.gaussian, D.test$target$x)
 }

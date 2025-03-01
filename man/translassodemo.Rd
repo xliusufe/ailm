@@ -38,6 +38,6 @@ data(translassodemo)
 y = translassodemo$y
 X = translassodemo$X
 set.seed(100)
-prop.re1 <- Trans.lasso(X, y, n.vec, I.til = 1:50, l1 = l1)
-print(prop.re1$beta.hat)
+#prop.re1 <- Trans.lasso(X, y, n.vec, I.til = 1:50, l1 = l1)
+#print(prop.re1$beta.hat)
 }

@@ -36,4 +36,10 @@ library(ailm)
 data(glmtransbinomialdemo)
 str(glmtransbinomialdemo$D.training)
 str(glmtransbinomialdemo$D.training$target)
+
+D.training <-glmtransbinomialdemo$D.training
+D.test <- glmtransbinomialdemo$D.test
+fit.binomial <- glmtrans(D.training$target, D.training$source, family = "binomial")
+summary(fit.binomial)
+y.pred.glmtrans <- predict(fit.binomial, D.test$target$x)
 }
