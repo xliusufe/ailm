@@ -82,7 +82,7 @@ The data set includes the following tissue types:
 library(ailm)
 library(hdtrd)
 # 加载gtexbrain数据集
-data('gtexbrain.rda')
+data('gtexbrain')
 # 提取Brain_Amygdala的数据
 amygdala_data <- gtexbrain[["Brain_Amygdala"]]
 # 找到JAM2基因的列索引
