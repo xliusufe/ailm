@@ -81,41 +81,37 @@ The data set includes the following tissue types:
 \examples{
 library(ailm)
 library(hdtrd)
-# 加载gtexbrain数据集
-data('gtexbrain')
-# 提取Brain_Amygdala的数据
+data(gtexbrain)
+
 amygdala_data <- gtexbrain[["Brain_Amygdala"]]
-# 找到JAM2基因的列索引
 jam2_col <- which(colnames(amygdala_data) == "JAM2")
-# 如果没有找到JAM2基因，则抛出错误
+
 if (length(jam2_col) == 0) {
 	stop("JAM2 gene not found in Brain_Amygdala data.")
 }
-# 分离Y（JAM2基因）和X（剩余基因）
+
 target_Y <- amygdala_data[, jam2_col]
 target_X <- amygdala_data[, -jam2_col]
-# 准备源数据集
+
 source_data_list <- lapply(setdiff(names(gtexbrain), "Brain_Amygdala"), function(tissue) {
 	tissue_data <- gtexbrain[[tissue]]
 
-	# 找到JAM2基因的列索引
 	jam2_col <- which(colnames(tissue_data) == "JAM2")
 
 	if (length(jam2_col) == 0) {
 	warning(paste("JAM2 gene not found in", tissue, "data. Skipping this tissue."))
 	return(NULL)
 	}
-	# 分离Y（JAM2基因）和X（剩余基因）
 	Y <- tissue_data[, jam2_col]
 	X <- tissue_data[, -jam2_col]
 	list(Y = Y, X = X)
 })
-# 使用translasso进行迁移学习分析
+
 fit_translasso <- translasso(
 	target = list(Y = target_Y, X = target_X),
 	source = source_data_list,
-	idtrans = seq_along(source_data_list)  # 使用所有源数据集
+	idtrans = seq_along(source_data_list)
 )
-# 查看估计系数
+
 print(fit_translasso$beta)
 }
