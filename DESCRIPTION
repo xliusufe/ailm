@@ -10,9 +10,11 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Depends: R (>= 3.5.0)
-Imports: Matrix, glmnet, glmtrans, rrpack, Renvlp, RidgeVar
-Remotes: xliusufe/RidgeVar
+Imports: Matrix, glmnet, glmtrans, rrpack, Renvlp, RidgeVar, hdtrd
+Remotes: xliusufe/RidgeVar, xliusufe/hdtrd
 NeedsCompilation: yes
 Repository: github
 URL: https://github.com/xliusufe/ailm
 Packaged: 2025-02-22 07:41:52 UTC; Xu Liu
+
+
