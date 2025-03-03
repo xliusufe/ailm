@@ -18,21 +18,20 @@
     which applies transfer learning in the context of high-dimensional generalized linear models.
 }
 \source{
-    Tian, Y., \& Feng, Y. (2023).
+    Tian, Y., & Feng, Y. (2023).
     Transfer learning under high-dimensional generalized linear models.
     \emph{Journal of the American Statistical Association},
-    \bold{118}(544), 2684--2697.
-    \doi{10.1080/01621459.2023.1838304}
+    \bold{118}(544), 2684-2697.
 }
 \references{
-    Tian, Y., \& Feng, Y. (2023).
+    Tian, Y., & Feng, Y. (2023).
     Transfer learning under high-dimensional generalized linear models.
     \emph{Journal of the American Statistical Association},
-    \bold{118}(544), 2684--2697.
-    \doi{10.1080/01621459.2023.1838304}
+    \bold{118}(544), 2684-2697.
 }
 \examples{
 library(ailm)
+library(glmtrans)
 data(glmtransbinomialdemo)
 str(glmtransbinomialdemo$D.training)
 str(glmtransbinomialdemo$D.training$target)

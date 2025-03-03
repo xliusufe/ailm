@@ -27,15 +27,15 @@
 }
 \source{
     https://github.com/tonmcg/US\_County_Level\_Election\_Results\_08-20
-    and https://www.kaggle.com/benhamner/2016-us-election.
+    and 
+    
+    https://www.kaggle.com/benhamner/2016-us-election.
 }
 \references{
-    Tian, Y., \& Feng, Y. (2023).
+    Tian, Y., & Feng, Y. (2023).
     Transfer learning under high-dimensional generalized linear models.
     \emph{Journal of the American Statistical Association},
-    \bold{118}(544), 2684--2697.
-    \doi{10.1080/01621459.2023.1838304}
-}
+    \bold{118}(544), 2684-2697.
 }
 \examples{
 library(ailm)
@@ -44,6 +44,10 @@ data(uselection2020)
 str(uselection2020[['Arkansas']])
 str(uselection2020[['Arkansas']]$target)
 data_train <- uselection2020[['Arkansas']]
+fit.binomial <- glmtrans(data_train$target, data_train$source, family = "binomial")
+summary(fit.binomial)
+
+data_train <- uselection2020[['Georgia']]
 fit.binomial <- glmtrans(data_train$target, data_train$source, family = "binomial")
 summary(fit.binomial)
 }

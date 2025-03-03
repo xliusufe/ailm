@@ -39,9 +39,7 @@
     Chin, K., DeVries, S., et al. (2006). 
     Genomic and transcriptional aberrations linked to breast cancer pathophysiologies.
     \emph{Cancer cell},
-    \bold{10}(6), 529–541.
-    \doi{10.1016/j.ccr.2006.10.009}
-}
+    \bold{10}(6), 529-541.}
 \examples{
 library(glmnet)
 library(ailm)
@@ -55,4 +53,18 @@ fit_ridge = cv.glmnet(x,y,alpha = 0)
 coef(fit_ridge, s = "lambda.min")
 fit_lasso = cv.glmnet(x,y,alpha = 1)
 coef(fit_lasso, s = "lambda.min")
+
+
+library(rrpack)
+library(ailm)
+data(breastcancer)
+X = t(breastcancer$dna[breastcancer$chrom==21,])
+Y = t(breastcancer$rna[which(breastcancer$genechr==21),])
+set.seed(123)
+model <- rssvd(Y = Y, X = X, nrank = 1, ic.type = "BIC")
+summary(model)
+U <- model$U
+V <- model$V
+D <- model$D
+B_approx <- D * U %*% t(V)
 }
