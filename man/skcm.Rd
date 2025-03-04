@@ -8,14 +8,14 @@
     data(skcm)
 }
 \arguments{
-\item{y}{A numeric vector of length 361 containing clinical outcomes (e.g., survival status or time).}
+\item{y}{A numeric vector of length 361 representing Breslow's thickness, a clinicopathologic feature of cutaneous melanoma.}
 
 \item{gexp}{A data frame with 361 rows and 2000 columns, 
     where each column represents expression values of a gene. 
     Gene names are provided as column names (e.g., SLC8A1, DPYD).}
 }
 \details{
-    The dataset includes 361 samples with outcomes (e.g., survival) and expression levels of the top 2000 most variable genes. 
+    The dataset includes 361 samples with outcomes (Breslow's thickness measurements) and expression levels of the top 2000 most variable genes. 
     It is derived from The Cancer Genome Atlas (TCGA) for Skin Cutaneous Melanoma (SKCM), one of the most aggressive cancer types.
 }
 \source{
