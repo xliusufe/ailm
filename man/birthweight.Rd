@@ -32,10 +32,10 @@
     This dataset originates from a study examining risk factors associated with low birth weight in a cohort of 189 infants.
 }
 \source{
-    Venables, W.N. and Ripley, B.D. (2002) \emph{Modern Applied Statistics with S}. Springer.
+    Venables, W. N., & Ripley, B. D. (2002). \emph{Modern Applied Statistics with S}. Springer.
 }
 \references{
-    Hosmer, D.W. and Lemeshow, S. (1989). \emph{Applied Logistic Regression}. John Wiley \& Sons.
+    Hosmer, D. W., & Lemeshow, S. (1989). \emph{Applied Logistic Regression}. John Wiley & Sons.
 }
 \examples{
 data(birthweight)

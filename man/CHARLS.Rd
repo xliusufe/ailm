@@ -27,15 +27,17 @@
     https://charls.charlsdata.com/pages/Data/2015-charls-wave4/zh-cn.html
 }
 \references{
-    Ren, P., Liu, X., Zhang, X., Zhan, P., & Qiu, T. (2024). Integrative analysis of high-dimensional quantile regression with contrasted penalization. Journal of Applied Statistics, 1-17.
+    Ren, P., Liu, X., Zhang, X., Zhan, P., & Qiu, T. (2024). 
+    Integrative analysis of high-dimensional quantile regression with contrasted penalization. 
+    \emph{Journal of Applied Statistics}, 1-17.
 }
 \examples{
-    library(glmnet)
-    data(CHARLS)
-    data_hebei = CHARLS$hebei
-    y = data_hebei$y
-    x = data_hebei[,-1]
-    x = matrix(unlist(x),nrow = nrow(x))
-    fit_lasso = cv.glmnet(x,y,alpha = 1)
-	coef(fit_lasso,s = "lambda.min")
+library(glmnet)
+data(CHARLS)
+data_hebei = CHARLS$hebei
+y = data_hebei$y
+x = data_hebei[,-1]
+x = matrix(unlist(x),nrow = nrow(x))
+fit_lasso = cv.glmnet(x,y,alpha = 1)
+coef(fit_lasso,s = "lambda.min")
 }

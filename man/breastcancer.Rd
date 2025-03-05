@@ -39,7 +39,8 @@
     Chin, K., DeVries, S., et al. (2006). 
     Genomic and transcriptional aberrations linked to breast cancer pathophysiologies.
     \emph{Cancer cell},
-    \bold{10}(6), 529-541.}
+    \bold{10}(6), 529-541.
+}
 \examples{
 library(glmnet)
 data(breastcancer)
