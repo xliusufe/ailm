@@ -34,6 +34,7 @@
 }
 \examples{
 library(glmnet)
+library(hdtrd)
 data(translassodemo2)
 fit <- translasso(target = translassodemo2[[1]], source = translassodemo2[-1], idtrans = seq(5))
 fit$beta[1:10]
