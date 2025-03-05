@@ -42,7 +42,6 @@
     \bold{10}(6), 529-541.}
 \examples{
 library(glmnet)
-library(ailm)
 data(breastcancer)
 dna = breastcancer$dna[breastcancer$chrom==21,]
 rna = breastcancer$rna[which(breastcancer$genechr==21),]
@@ -56,7 +55,6 @@ coef(fit_lasso, s = "lambda.min")
 
 
 library(rrpack)
-library(ailm)
 data(breastcancer)
 X = t(breastcancer$dna[breastcancer$chrom==21,])
 Y = t(breastcancer$rna[which(breastcancer$genechr==21),])

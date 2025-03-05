@@ -28,7 +28,6 @@
     \bold{161}(7), 1681-1696.
 }
 \examples{
-library(ailm)
 data(skcm)
 hist(skcm$y, main = "Distribution of Clinical Outcomes", xlab = "Outcome Value")
 pca_result <- prcomp(skcm$gexp[, 1:100], scale = TRUE) # Run PCA on the top 100 genes

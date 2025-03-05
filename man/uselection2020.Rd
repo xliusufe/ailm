@@ -38,7 +38,6 @@
     \bold{118}(544), 2684-2697.
 }
 \examples{
-library(ailm)
 library(glmtrans)
 data(uselection2020)
 str(uselection2020[['Arkansas']])

@@ -30,7 +30,6 @@
     \bold{118}(544), 2684-2697.
 }
 \examples{
-library(ailm)
 library(glmtrans)
 data(glmtranslineardemo)
 str(glmtranslineardemo$D.training)

@@ -50,7 +50,6 @@
     \bold{5}(1), 81-102.
 }
 \examples{
-library(ailm)
 data(boston)
 model = lm(medv ~ ., data = boston)
 summary(model)

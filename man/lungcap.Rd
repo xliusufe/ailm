@@ -44,7 +44,6 @@
     \bold{309}(12), 699-703.
 }
 \examples{
-library(ailm)
 data(lungcap)
 model = lm(fev ~ ., data = lungcap)
 summary(model)

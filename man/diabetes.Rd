@@ -26,7 +26,6 @@
 }
 \examples{
 library(glmnet)
-library(ailm)
 data(diabetes)
 fit = glmnet(diabetes$x,diabetes$y)
 coef(fit, s = 1)

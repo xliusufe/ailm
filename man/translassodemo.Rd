@@ -33,7 +33,6 @@
 }
 \examples{
 library(glmnet)
-library(ailm)
 data(translassodemo)
 y = translassodemo$y
 X = translassodemo$X

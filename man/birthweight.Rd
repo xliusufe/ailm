@@ -38,7 +38,6 @@
     Hosmer, D.W. and Lemeshow, S. (1989). \emph{Applied Logistic Regression}. John Wiley \& Sons.
 }
 \examples{
-library(ailm)
 data(birthweight)
-head(birthwt)
+head(birthweight)
 }

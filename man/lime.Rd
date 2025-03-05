@@ -30,7 +30,6 @@
     \bold{4}(1), 1-11.
 }
 \examples{
-library(ailm)
 data(lime)
 lime$origin <- as.integer(lime$origin)
 df <- scale(lime, center = FALSE)

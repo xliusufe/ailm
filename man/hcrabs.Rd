@@ -34,7 +34,6 @@ or D (dark).}
     \bold{102}(1), 1-21.
 }
 \examples{
-library(ailm)
 data(hcrabs)
 hcrabs$col <- as.integer(hcrabs$col)
 hcrabs$spine <- as.integer(hcrabs$spine)

@@ -40,7 +40,6 @@
     McGraw-Hill, New York.    
 }
 \examples{
-library(ailm)
 data(gdp)
 mean_growth <- mean(gdp$outcome, na.rm = TRUE)
 cat("Average GDP growth rate:", round(mean_growth, 3), "\n")
@@ -49,7 +48,6 @@ summary(model)
 
 
 library(RidgeVar)
-library(ailm)
 data(gdp)
 subset <- 1:41
 y <- gdp$outcome[subset]

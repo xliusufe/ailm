@@ -52,14 +52,12 @@ Rowing, Swim, T400m (track, further than 400m), Tennis, TSprnt (track sprint eve
     \bold{23}(7), 788-794.
 }
 \examples{
-library(ailm)
 data(ais)
 model <- lm(hgb ~ lbm + bmi + pbf, data = ais)
 summary(model)
 
 
 library(Renvlp)
-library(ailm)
 data(ais)
 ais$sex = as.numeric(ais$sex)
 ais$sport = as.numeric(ais$sport)

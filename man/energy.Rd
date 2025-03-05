@@ -31,7 +31,6 @@
     \bold{60}(1), 5-20.
 }
 \examples{
-library(ailm)
 data(energy)
 model <- lm(energy ~ fat, data = energy)
 summary(model)

@@ -79,7 +79,6 @@ The data set includes the following tissue types:
   \bold{84}(1), 149-173.
 }
 \examples{
-library(ailm)
 library(hdtrd)
 data(gtexbrain)
 

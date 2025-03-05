@@ -44,7 +44,6 @@
     \bold{279}(1743), 3861-3869.
 }
 \examples{
-library(ailm)
 data(babblers)
 model = lm(feedingrate ~ ., data = babblers)
 summary(model)
