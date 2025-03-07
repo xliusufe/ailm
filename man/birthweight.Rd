@@ -38,6 +38,10 @@
     Hosmer, D. W., & Lemeshow, S. (1989). \emph{Applied Logistic Regression}. John Wiley & Sons.
 }
 \examples{
+library(dplyr)
 data(birthweight)
-head(birthweight)
+attach(birthweight)
+cols_factor = c("race", "ptl", "ftv")
+birthweight[cols_factor] = lapply(birthweight[cols_factor], as.factor)
+birth_dummy = model.matrix(~ race + ptl + ftv - 1, birthweight)[, -1]
 }
