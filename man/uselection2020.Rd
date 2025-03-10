@@ -26,7 +26,7 @@
   - \code{source}: A list of length 47 containing source data.
 }
 \source{
-    https://github.com/tonmcg/US\_County_Level\_Election\_Results\_08-20
+    https://github.com/tonmcg/US_County_Level_Election_Results_08-24
     and 
     
     https://www.kaggle.com/benhamner/2016-us-election.

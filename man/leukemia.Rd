@@ -18,7 +18,7 @@
     The dataset is included in the \code{SIS} package.
 }
 \references{
-    Fan, J., \& Lv, J. (2008). Sure independence screening for ultrahigh dimensional feature space. \emph{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}, 70(5), 849-911.
+    Fan, J., & Lv, J. (2008). Sure independence screening for ultrahigh dimensional feature space. \emph{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}, 70(5), 849-911.
 }
 \examples{
 library(rbs)
